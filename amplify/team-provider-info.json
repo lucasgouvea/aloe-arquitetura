@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-aloearquitetura-dev-114334-authRole",
+            "UnauthRoleArn": "arn:aws:iam::269991902811:role/amplify-aloearquitetura-dev-114334-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::269991902811:role/amplify-aloearquitetura-dev-114334-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-aloearquitetura-dev-114334-deployment",
+            "UnauthRoleName": "amplify-aloearquitetura-dev-114334-unauthRole",
+            "StackName": "amplify-aloearquitetura-dev-114334",
+            "StackId": "arn:aws:cloudformation:us-east-1:269991902811:stack/amplify-aloearquitetura-dev-114334/0d66e930-5bf7-11eb-aa85-12da3ecd6186",
+            "AmplifyAppId": "d1kwhyk3g6uoly"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1kwhyk3g6uoly",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

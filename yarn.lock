@@ -149,10 +149,22 @@
   dependencies:
     "@opentelemetry/context-base" "^0.14.0"
 
+"@opentelemetry/api@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/api/-/api-0.15.0.tgz#0324a96e70e7a8122dc6ec814ce796535c8d9123"
+  integrity sha512-tPyzyO8P33wWUlUdo8+NawX2qnn8HyVUAilANWLxrT9C6g4JbN6eatSQrx3G0NzohnobT3fiwrbVFNeacWS9gg==
+  dependencies:
+    "@opentelemetry/context-base" "^0.15.0"
+
 "@opentelemetry/context-base@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
+
+"@opentelemetry/context-base@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.15.0.tgz#8cc5ba4b9a39cf07d2648d0c7c397497cf1d4486"
+  integrity sha512-J8AKI035Mf84bcD+0Ok69Oo3nKoa+HLCj54/ZKcTPJPfx3MywZOEildDPej2fV3tA0d0G9BID8b6o+BGpbwmig==
 
 "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
