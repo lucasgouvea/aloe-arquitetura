@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { StyledContainer, StyledDrawer } from "../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -29,33 +28,36 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
+    <React.Fragment>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <StyledContainer>
-        <main className={styles.main}>
-          <FontAwesomeIcon
-            icon={faBars}
-            size="2x"
-            onClick={() => toggleDrawer(true)}
-          />
-          <StyledDrawer
-            anchor={"right"}
-            open={isDrawerOpen}
-            onClose={() => toggleDrawer(false)}
-            BackdropProps={{ invisible: true }}
-            theme={theme}
-          >
-            Drawer
-          </StyledDrawer>
-          <h1 className={styles.title}>
-            Aloê<a href="https://nextjs.org"> Arquitetura</a>
-          </h1>
-        </main>
+      <StyledContainer theme={theme}>
+        <FontAwesomeIcon
+          icon={faBars}
+          size="2x"
+          onClick={() => toggleDrawer(true)}
+          color="white"
+          style={{ ...theme.faBarsIcon }}
+        />
+        <StyledDrawer
+          anchor={"right"}
+          open={isDrawerOpen}
+          onClose={() => toggleDrawer(false)}
+          BackdropProps={{ invisible: true }}
+          theme={theme}
+        >
+          Drawer
+        </StyledDrawer>
+        <img
+          src={theme.img.src}
+          height={theme.img.height}
+          width={theme.img.width}
+        />
+        <div style={{ ...theme.footer }} />
       </StyledContainer>
-    </div>
+    </React.Fragment>
   );
 }
