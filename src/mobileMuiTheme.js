@@ -24,7 +24,6 @@ const mobileMuiTheme = createMuiTheme({
     width: "80vw",
   },
   img: {
-    src: "https://i.ibb.co/HHGgNLG/aaaa.png",
     height: "100%",
     width: "100%",
   },

@@ -1,3 +1,4 @@
+rm aloe-arquitetura.tar
 mkdir aloe-arquitetura
 cp -r .next aloe-arquitetura
 cp package.json aloe-arquitetura

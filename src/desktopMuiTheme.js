@@ -24,8 +24,6 @@ const desktopMuiTheme = createMuiTheme({
     width: "20vw",
   },
   img: {
-    src:
-      "https://static.wixstatic.com/media/846469_671b46f603774f7f9bfa06114c377116~mv2.jpg/v1/fill/w_1249,h_813,al_c,q_85,usm_0.66_1.00_0.01/846469_671b46f603774f7f9bfa06114c377116~mv2.webp",
     height: "100%",
     width: "100%",
   },
