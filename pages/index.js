@@ -22,16 +22,13 @@ export async function getServerSideProps({ req }) {
 
   return {
     props: {
-      isMobile,
       base64,
     },
   };
 }
 
-export default function Home({ base64, isMobile }) {
+export default function Home({ base64 }) {
   const theme = useTheme();
-  const uploadDesktopInputRef = useRef();
-  const uploadMobileInputRef = useRef();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = (drawerOpen) => {
@@ -41,42 +38,11 @@ export default function Home({ base64, isMobile }) {
   return (
     <React.Fragment>
       <Head>
-        <title>Create Next App</title>
+        <title>Aloê Arquitetura</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <StyledContainer theme={theme}>
-        {isMobile === false && (
-          <div
-            style={{
-              display: "flex",
-              width: "85%",
-              alignSelf: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <Uploader
-              ref={uploadDesktopInputRef}
-              text="Escolha uma foto no formato PNG - Desktop"
-              onSubmit={(e) => {
-                e.preventDefault();
-                console.log(uploadDesktopInputRef.current);
-                const file = uploadDesktopInputRef.current.files[0];
-                AloeBackofficeService.uploadBackgroundDesktop(file);
-              }}
-            />
-            <Uploader
-              ref={uploadMobileInputRef}
-              text="Escolha uma foto no formato PNG - Mobile"
-              onSubmit={(e) => {
-                e.preventDefault();
-                const file = uploadMobileInputRef.current.files[0];
-                AloeBackofficeService.uploadBackgroundMobile(file);
-              }}
-            />
-          </div>
-        )}
-
         <FontAwesomeIcon
           icon={faBars}
           size="2x"
