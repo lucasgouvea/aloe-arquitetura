@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prod": "next start -H 172.26.15.255"
+    "prod": "next start -H 172.26.11.117"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

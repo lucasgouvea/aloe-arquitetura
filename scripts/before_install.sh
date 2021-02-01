@@ -6,3 +6,4 @@ nvm use --delete-prefix v12.20.1
 
 pm2 del next
 npm i
+npm run build
