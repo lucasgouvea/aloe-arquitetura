@@ -23,6 +23,7 @@ export async function getServerSideProps({ req }) {
   return {
     props: {
       base64,
+      isMobile,
     },
   };
 }
