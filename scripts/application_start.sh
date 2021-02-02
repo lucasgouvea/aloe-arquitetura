@@ -1,4 +1,2 @@
-echo "Setting node version - 12"
-nvm use 12
 echo "Starting app"
-pm2 start npm --name "next" -- run prod
+/root/.nvm/versions/node/v12.20.1/bin/pm2 start npm --name "next" -- run prod
