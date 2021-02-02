@@ -6,3 +6,5 @@ echo "Running npm install"
 npm install
 echo "Running npm run build"
 npm run build
+echo "Starting app"
+pm2 start npm --name "next" -- run prod
