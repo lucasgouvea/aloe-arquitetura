@@ -6,6 +6,9 @@ export NVM_DIR="root/.nvm"
 echo "Moving to /home/ec2-user/aloe-arquitetura"
 cd /home/ec2-user/aloe-arquitetura
 
+echo "Installing Node version - 12"
+nvm install v12.20.1
+
 echo "Setting Node version - 12"
 nvm use --delete-prefix v12.20.1
 
