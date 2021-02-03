@@ -21,7 +21,13 @@ const desktopMuiTheme = createMuiTheme({
     alignSelf: "flex-end",
   },
   drawer: {
-    width: "20vw",
+    width: "34vw",
+    paddingTop: "22%",
+    item: {
+      display: "flex",
+      justifyContent: "center",
+      paddingTop: 24,
+    },
   },
   img: {
     height: "100%",

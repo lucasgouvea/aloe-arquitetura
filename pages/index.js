@@ -1,6 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
-import { StyledContainer, StyledDrawer, Uploader } from "../components";
+import {
+  StyledContainer,
+  StyledDrawer,
+  StyledDrawerContainer,
+  DrawerItem,
+} from "../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTheme } from "@material-ui/core/styles";
@@ -58,7 +63,12 @@ export default function Home({ base64 }) {
           BackdropProps={{ invisible: true }}
           theme={theme}
         >
-          Drawer
+          <StyledDrawerContainer theme={theme}>
+            <DrawerItem text="Início" />
+            <DrawerItem text="Sobre" />
+            <DrawerItem text="Projetos" />
+            <DrawerItem text="Contato" />
+          </StyledDrawerContainer>
         </StyledDrawer>
         <img
           src={`data:image/png;base64,${base64}`}

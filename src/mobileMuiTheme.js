@@ -22,6 +22,13 @@ const mobileMuiTheme = createMuiTheme({
   },
   drawer: {
     width: "80vw",
+    paddingTop: 150,
+    item: {
+      display: "flex",
+      justifyContent: "flex-start",
+      paddingLeft: 40,
+      paddingTop: 36,
+    },
   },
   img: {
     height: "100%",

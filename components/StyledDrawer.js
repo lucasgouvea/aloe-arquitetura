@@ -11,6 +11,8 @@ const styles = (theme) => {
     drawerOpen: {
       width: theme.drawer.width,
       boxShadow: "none",
+      paddingTop: theme.drawer.paddingTop,
+      display: "flex",
     },
     drawerClose: {
       overflowX: "hidden",
