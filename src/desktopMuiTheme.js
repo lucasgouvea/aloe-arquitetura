@@ -13,6 +13,9 @@ const desktopMuiTheme = createMuiTheme({
   },
   container: {
     marginTop: 35,
+    maxWidth: 2000,
+    paddingLeft: 35,
+    paddingRight: 35,
   },
   faBarsIcon: {
     position: "absolute",

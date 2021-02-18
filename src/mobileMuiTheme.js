@@ -13,6 +13,9 @@ const mobileMuiTheme = createMuiTheme({
   },
   container: {
     marginTop: 0,
+    maxWidth: "100%",
+    paddingLeft: 0,
+    paddingRight: 0,
   },
   faBarsIcon: {
     position: "absolute",
